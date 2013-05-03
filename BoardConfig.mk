@@ -97,9 +97,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 183500800
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel 
-TARGET_KERNEL_SOURCE := kernel/huawei/msm8x25
-TARGET_KERNEL_CONFIG := cm_u8825d_defconfig
-#TARGET_PREBUILT_KERNEL := device/huawei/u8825d/kernel
+#TARGET_KERNEL_SOURCE := kernel/huawei/msm8x25
+#TARGET_KERNEL_CONFIG := cm_u8825d_defconfig
+TARGET_PREBUILT_KERNEL := device/huawei/u8825d/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei loglevel=1
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_PAGE_SIZE := 2048
