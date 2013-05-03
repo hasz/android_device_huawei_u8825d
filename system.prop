@@ -1,0 +1,208 @@
+#
+# system.prop for u8825d
+#
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=0
+ro.telephony.ril_class=QualcommSharedRIL
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+debug.sf.hw=1
+ro.sf.lcd_density=240
+ro.opengles.version=131072
+ro.use_data_netmgrd=true
+ro.config.hw_omacp=1
+
+wifi.interface=eth0
+wifi.supplicant_scan_interval=15
+
+#debug.camcorder.disablemeta=1
+
+persist.sys.usb.config=mass_storage,adb
+
+# System
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=128m
+dalvik.vm.dexopt-flags=m=y,u=n
+
+# Mount the internal SD card, too
+ro.additionalmounts=/storage/sdcard1
+ro.vold.switchablepair=/storage/sdcard1,/storage/sdcard0
+ro.emmc.sdcard.partition=19
+
+persist.sys.use_dithering=2
+com.qc.hardware=true
+gfx.highend_override=yes
+
+#ro.telephony.call_ring.delay=3000
+
+# af controller enable switcher
+ro.config.camera.afctl.enable=true
+
+keyguard.no_require_sim=true
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data.ds_fmc_app.mode=0
+
+#
+# system props for IMS module
+#
+persist.ims.regmanager.mode=0
+
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+
+#
+# system prop for Bluetooth FTP profile
+#
+ro.qualcomm.bluetooth.ftp=true
+
+#
+# system prop for Bluetooth SAP profile
+#
+ro.qualcomm.bluetooth.sap=true
+
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+
+#
+#system property for Bluetooth discoverability timeout in seconds
+#0: Always discoverable
+debug.bt.discoverable_time=-1
+
+#System prop to enable ehrpd capability
+ro.config.ehrpd=true
+
+# System property for cabl
+ro.qualcomm.cabl=1
+
+#
+#System prop to determine availability of
+#analog fm path
+#
+ro.fm.analogpath.supported=true
+
+#
+#System property for FM transmitter
+#
+ro.fm.transmitter=false
+
+#
+#System property for single instance recording
+#
+ro.fm.mulinst.recording.support=false
+ro.config.keypasstouser=true
+#System property for msm 
+#
+#G330 4.0 WVGA lcd
+debug.composition.8x25.type=mdp
+ro.hw_plat=8x25
+ro.config.hw_addsettingsdbex=1
+ro.config.PopupTwink=false
+ro.config.SetStatusbarText=false
+
+ro.config.hw_GSensorOptimize=true
+ro.config.hw_proximity=true
+ro.config.hw_RemindWifiToPdp=true
+# true : enable device to unlock when PUK lock
+ro.config.hwft_PinPukUnlockscr=true
+
+ro.config.xtra_support=true
+ro.config.move_up_display=true
+# af controller enable switcher
+ro.config.camera.afctl.enable=true
+persist.sys.quickpoweron=normal
+ro.config.hw_poanimation=5000
+ro.config.hw_omacp=1
+ro.config.dualmic=false
+ro.config.hw_eapsim=true
+ro.config.hw_optimizeBoot=true
+ro.config.hw_new_double_signal=1
+ro.config.DOMAIN_ASCII_ONLY=true
+ro.config.showEmergencyNumber=true
+ro.config.hw_tether_dun_enable=0
+debug.enabletr=true
+debug.camcorder.disablemeta=0
+persist.sys.strictmode.disable=true
+ro.config.hw_support_ipcall=false			
+ro.config.hw_voicerecord=true			
+ro.config.hw_cdma_cdg=false
+drm.service.enabled=false
+
+ro.config.widevine_level3=true
+ro.camera.sound.forced=1
+ro.config.hwft_simrefresh=true
+ro.config.hw_nullalpha_act=true
+ro.config.dsds_mode=umts_gsm
+persist.dsds.enabled=true
+ro.huawei.dsds.signalbarcust=true
+ro.config.hw.logsystem.auto.act=1
+ro.config.hw.lca.show.config=1
+ro.config.hw_vcardBase64=true
+ro.config.hw.usedtime.statis=1
+ro.dual.sim.phone=true
+#TCP Fin Aggregation
+net.tcp.fin.aggregation = 1
+#Memory Cache
+net.webkit.cache.mindeadsize = 4194304
+net.webkit.cache.maxdeadsize = 4194304
+net.webkit.cache.size = 12582912
+#DNS Bug Fix and Netstack Priority Fix
+net.webkit.setpri = 1
+#Fling velocity
+ro.max.fling_velocity=4000
+audio.legacy.postproc=true
+persist.multisim.config=1
+debug.camera.landscape=true
+dev.pm.dyn_sample_period=700000
+dev.pm.dyn_samplingrate=1
+httplive.enable.discontinuity=true
+hw.cabl.level=2
+hw.cabl.version=1.0.20120512
+hwui.render_dirty_regions=true
+net.dns.cache_size=512
+net.dns.cache_ttl=600
+net.http.getzip=1
+net.http.idle_cache.shutdown=true
+net.http.idle_cache.size=40
+net.http.threads=10
+net.nw.cache.orderby=weight
+net.nw.cache.prioadvstep=86400000
+net.nw.cache.weightadvstep=3600000
+persist.sys.strictmode.visual=false
+ro.staticwallpaper.pixelformat=RGB_565
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+sys.media.vdec.sw=0
+wlan.driver.status=ok
+ro.config.hw_dts=true
+ro.config.hw_sound_switch = false
+debug.composition.type=mdp
+del.autofill.for.qcom=true
+lpa.decode=true
+ro.huawei.cust.drm.fl_only=true
+ro.config.hw_music_dts=false
+ro.config.hw_dtsmode=true
+ro.config.is_cdma_phone=true
+ro.cfg.hw_ctl_cardactive=true
+ro.confg.hw_appsbootversion=U8825DVSHENDUOS_APPSBOOT
+ro.confg.hw_appversion=U8825DVSHENDUOS_KERNEL
+ro.confg.hw_appfsversion=U8825DVSHENDUOS_SYSIMG

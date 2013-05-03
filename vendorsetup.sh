@@ -1,0 +1,3 @@
+add_lunch_combo huawei_u8825d-userdebug
+add_lunch_combo cm_u8825d-userdebug
+add_lunch_combo cm_u8825d-eng
